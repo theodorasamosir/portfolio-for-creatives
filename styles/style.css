@@ -331,9 +331,18 @@ a:active {
   padding: 1rem;
   align-items: flex-start;
 }
+.wordmark {
+  fill: #8fc94c;
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+}
 
+
+.wordmark:hover {
+  fill: #fffaef;
+}
 .logo {
-  width: 5rem;
+  width: 6rem;
   fill:#8fc94c;
   transition: 200ms;
   transition-timing-function: ease-in-out;
