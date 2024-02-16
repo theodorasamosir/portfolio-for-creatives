@@ -10,10 +10,8 @@ Add the Google Fonts you want, remove the ones you don't.
 
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Hepta+Slab|Staatliches&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 /*
@@ -28,10 +26,10 @@ Imported stylesheets. Remove the ones you do not want to use.
 
 */
 
-@import url('make-something-fly.css');
+/* @import url('make-something-fly.css'); */
 @import url('animated-gradient.css');
 @import url('text-stroke.css');
-@import url('stroke-shadow.css');
+/* @import url('stroke-shadow.css'); */
 @import url('scroll-to-top.css');
 /*
 
@@ -51,7 +49,7 @@ No media query for `xs` since this is the default in Bootstrap
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  cursor: url("../assets/temp/up-cursor.png"), auto !important;
+  /* cursor: url("../assets/temp/up-cursor.png"), auto !important; */
 }
 
 *,
@@ -73,39 +71,39 @@ html {
 /* Design variables refer to CSS variables that store specific design elements, such as colors and typography, which can be utilized throughout a website. Instead of individually modifying each CSS element, designers can quickly make changes by using design variables. Adjust the variables below, create new variables as desired, and delete the variables that you do not want to use. */
 
 :root {
-  --body-typeface: "Inter", sans-serif;
-  --heading-typeface: 'Eczar', serif;
-  --project-title-typeface: 'Eczar', serif;
-  --background-color: #fdfdfd;
-  --background-color-about: #f5f5f5;
-  --background-color-footer: #f5f5f5;    
+  --body-typeface:' Raleway', sans-serif;
+  --heading-typeface: 'Raleway', sans-serif;
+  --project-title-typeface: 'Raleway', sans-serif;
+  --background-color: #0c0c0c;
+  --background-color-about: #0c0c0c;
+  --background-color-footer: #0c0c0c;
   --alt-background-color: #000000;
-  --background-color-holding-page: rgba(82, 0, 255,0.6);
-  --h1-color: #5200ff;
-  --h2-color: #5200ff;
-  --h3-color: #5200ff;
-  --h4-color: #5200ff;
-  --h5-color: #5200ff;
-  --h6-color: #5200ff;
-  --primary-text-color: #222;
-  --holding-page-title-color: #ebedf0;
-  --accent-color: #5200ff;
-  --overlay-color: #5200ff;
-  --overlay-title-color: #ffffff;
-  --overlay-description-color: #ffffff;
-  --hyperlink-color: #5200ff;
-  --hyperlink-alternate-color: orangered;
-  --hover-color: #111;
-  --visited-color: #5200ff;
-  --project-title-color: #5200ff;
-  --project-sidebar-background-color: orangered;
-  --project-sidebar-text-color: white;
-  --heart-color: darkred;
-  --holding-page-footer-color: #f8f8ff;
-  --text-selection-background-color: #5200ff;
-  --linear-gradient-color-1: #ff057c;
-  --linear-gradient-color-2: #8d0b93;
-  --linear-gradient-color-3: #321575;
+  --background-color-holding-page: #0c0c0c;
+  --h1-color: ##ffffed;
+  --h2-color: #ffffed;
+  --h3-color: #ffffed;
+  --h4-color: #ffffed;
+  --h5-color: #ffffed;
+  --h6-color: #ffffed;
+  --primary-text-color: #ffffed;
+  --holding-page-title-color:  #ffffed;
+  --accent-color: #8fc94c;
+  --overlay-color: #8fc94c;
+  --overlay-title-color: #ffffed;
+  --overlay-description-color: #ffffed;
+  --hyperlink-color: #8fc94c;
+  --hyperlink-alternate-color: yellowgreen;
+  --hover-color: #6d6d66;
+  --visited-color: #8fc94c;
+  --project-title-color: #ffffed;
+  --project-sidebar-background-color: #0c0c0c;
+  --project-sidebar-text-color:  #ffffed;
+  --heart-color: yellowgreen;
+  --holding-page-footer-color:  #6d6d66;
+  --text-selection-background-color: #6d6d66;
+  --linear-gradient-color-1: #363636, 
+  --linear-gradient-color-2: #212121;
+  --linear-gradient-color-3: #0c0c0c);
   --stroke-shadow-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -113,7 +111,7 @@ html {
 body {
   font-family: var(--body-typeface);
   color: var(--primary-text-color);
-  background: var(--background-color);
+  background: var(--background-color); 
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -149,21 +147,24 @@ svg {
 */
 
 h1 {
-  font-size: 2rem;
+  font-size: 4.7rem;
   font-family: var(--heading-typeface);
+  font-weight: 800;
   margin-bottom: 1rem;
   color: var(--h1-color);
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 4.7rem;
   font-family: var(--heading-typeface);
+  font-weight: 800;
   margin-bottom: 1rem;
   color: var(--h2-color);
 }
 
 h3 {
   font-size: 1.325rem;
+  font-weight: 800;
   margin-bottom: 1rem;
   line-height: 1.3;
   color: var(--h3-color);
@@ -172,6 +173,7 @@ h3 {
 h4 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  font-weight: 700;
   color: var(--h4-color);
 }
 
@@ -190,6 +192,7 @@ h6 {
 p {
   font-size: 1rem;
   line-height: 1.3;
+  font-weight: 300;
   margin-bottom: 1rem;
 }
 
@@ -201,9 +204,8 @@ em {
   font-size: .875rem;
 }
 
-.hero-headline {
-  color: var(--overlay-color);
-}
+/* .hero-headline {
+} */
 
 .project-title {
   font-size: 3.725rem;
@@ -268,7 +270,7 @@ a:active {
 }
 
 .custom-navigation:hover {
-  background: url(assets/temp/heading-background.svg);
+  /* background: url(assets/temp/heading-background.svg); */
   background-size: 15%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -331,7 +333,14 @@ a:active {
 }
 
 .logo {
-  width: 3rem;
+  width: 5rem;
+  fill:#8fc94c;
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+.logo:hover {
+  fill: #ffffed;
 }
 
 .hero-headline-wrapper {
@@ -483,7 +492,7 @@ a:active {
   grid-template-columns: 1fr;
   grid-gap: 3rem;
   min-height: 100vh;
-  background: var(--background-color-footer);
+  /* background: var(--background-color-footer); */
   padding: 1rem;
 }
 
@@ -585,11 +594,7 @@ a:active {
 .project-details {
   width: 100%;
   padding: 1rem;
-  /* Delete the following if you do not want a gradient background on the project page */
-  background-image: linear-gradient(-225deg,
-      var(--linear-gradient-color-1) 0%,
-      var(--linear-gradient-color-2) 50%,
-      var(--linear-gradient-color-3) 100%);
+
 }
 
 
@@ -614,12 +619,8 @@ a:active {
   text-align: center;
   width: 100%;
   min-height: 100vh;
-  /* Delete the following if you do not want a grainy gradient background on the holding page */
-  background:
-    linear-gradient(0deg, rgba(0, 0, 0, 1), var(--background-color-holding-page)),
-    url(/assets/temp/noise.svg);
-  /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
-}
+  background-image: linear-gradient(0deg, rgba(12,12,12,1) 0%, rgba(12,12,12,1) 60%, rgba(143,201,76,1) 85%, rgba(255,255,237,1) 100%);
+
 
 .holding-page-animation {
   margin-bottom: 1rem;
