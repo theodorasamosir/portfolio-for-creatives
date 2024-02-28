@@ -1,6 +1,7 @@
 :root {
-    --gradient: radial-gradient(circle, #9b9b9b, #747474, #3b3b3b, #1f1f1f, #0c0c0c);
+    --gradient: linear-gradient(180deg, rgba(48,55,39,1) 0%, rgba(12,12,12,1) 24%);
 
+    
 .gradient-animation {
     background-size: 600%;
     background-image: var(--gradient);
