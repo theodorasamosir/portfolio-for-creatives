@@ -124,8 +124,7 @@ body {
 }
 
 /* Make all images responsive */
-img,
-svg {
+img,svg {
   max-width: 100%;
   height: auto;
   vertical-align: top;
@@ -178,9 +177,10 @@ h4 {
 }
 
 h5 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
   color: var(--h5-color);
+  font-weight: 800;
 }
 
 h6 {
@@ -217,6 +217,7 @@ em {
 .overlay-title {
   font-size: 2.875rem;
   color: var(--overlay-title-color);
+  text-align: center;
 }
 
 .overlay-description {
@@ -375,6 +376,10 @@ a:active {
   background-image: url("../assets/misc-images/3d-abstract-glass-render3-fastener2.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
+  max-width: 100%;
+  height: auto;
+ 
 }
 
 .hero-icon {
@@ -496,10 +501,11 @@ a:active {
 }
 
 .about-item-4 {
-  grid-column: 1 / 2;
-  grid-row: 4 / 5;
+  grid-row: 2 / 3;
+  grid-column: 1 / 4;
+  text-align: center;
+  align-self: end;
 }
-
 /* Global Footer
 
 ███████  ██████   ██████  ████████ ███████ ██████  
@@ -523,6 +529,7 @@ a:active {
 .footer-item-1 {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  padding: 0rem 1rem; 
 }
 
 .footer-item-2 {
@@ -535,9 +542,24 @@ a:active {
   grid-row: 3 / 4;
 }
 
-.footer-item-4 {
+/* .footer-item-4 {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
+} */
+
+.footer-item-4{
+  grid-row: 2 / 3;
+  grid-column: 1 / 4;
+  text-align: center;
+  align-self: end;
+
+}
+
+.footer-item-5{
+  grid-row: 3 / 4;
+grid-column: 1 / 4;
+text-align: center;
+align-self: end;
 }
 
 .backtotopbutton{
@@ -726,15 +748,30 @@ a:active {
   color: var(--accent-color);
 }
 
+.backhomebutton{
+  color:#8fc94c;
+  border: 1px solid #8fc94c;
+  border-radius: 15px;
+  padding: 15px 20px;
+  background-color: transparent;
+}
 
+.backhomebutton:hover{
+  color: #0c0c0c;
+  background-color: #8fc94c;
+}
+
+.errortext{
+  padding: 15px 20px;
+}
 
 
 /*
-███████ ██   ██ ██████  ███████ ██████  ██ ███    ███ ███████ ███    ██ ████████ ███████ 
-██       ██ ██  ██   ██ ██      ██   ██ ██ ████  ████ ██      ████   ██    ██    ██      
-█████     ███   ██████  █████   ██████  ██ ██ ████ ██ █████   ██ ██  ██    ██    ███████ 
-██       ██ ██  ██      ██      ██   ██ ██ ██  ██  ██ ██      ██  ██ ██    ██         ██ 
-███████ ██   ██ ██      ███████ ██   ██ ██ ██      ██ ███████ ██   ████    ██    ███████ 
+███████ ██   ██ ████████ ██████   █████  ███████ 
+██       ██ ██     ██    ██   ██ ██   ██ ██      
+█████     ███      ██    ██████  ███████ ███████ 
+██       ██ ██     ██    ██   ██ ██   ██      ██ 
+███████ ██   ██    ██    ██   ██ ██   ██ ███████ 
 */
 
 
@@ -743,7 +780,7 @@ a:active {
   place-items: center;
 }
 
-.experiments-headline-wrapper{
+.extras-headline-wrapper{
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -754,39 +791,21 @@ a:active {
   background-image: url("../assets/misc-images/3d-abstract-glass-render2-asteroid2.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 }
 
 
-
-.experiments-page-inner-container {
-  text-align: center;
-  min-height: 100vh;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+.footer-item-3 {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
 }
+
 
 .experiments-page-title {
   color: var(--accent-color);
   font-size: 2rem;
 }
 
-.experiment-1-wrapper {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 1rem;
-  flex: 1;
-}
-
-.experiment-2-wrapper {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 1rem;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-}
 
 .sub-navigation {
   display: flex;
@@ -952,12 +971,7 @@ a.sub-navigation-link:hover {
     grid-column: 3 / 4;
   }
 
-  .about-item-4 {
-    grid-row: 2 / 3;
-    grid-column: 1 / 4;
-    text-align: center;
-    align-self: end;
-  }
+
 
   .footer-item-4 {
     grid-row: 2 / 3;
