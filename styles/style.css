@@ -79,7 +79,7 @@ html {
   --background-color-footer: #0c0c0c;
   --alt-background-color: #000000;
   --background-color-holding-page: #0c0c0c;
-  --h1-color: ##ffffed;
+  --h1-color: #ffffed;
   --h2-color: #ffffed;
   --h3-color: #ffffed;
   --h4-color: #ffffed;
@@ -103,8 +103,7 @@ html {
   --text-selection-background-color: #6d6d66;
   --linear-gradient-color-1: #363636, 
   --linear-gradient-color-2: #212121;
-  --linear-gradient-color-3: #0c0c0c);
-  --stroke-shadow-color: rgba(0, 0, 0, 0.4);
+  --linear-gradient-color-3: #0c0c0c;
 }
 
 
@@ -154,7 +153,7 @@ h1 {
 }
 
 h2 {
-  font-size: 4.7rem;
+  font-size: 2.725rem;
   font-family: var(--heading-typeface);
   font-weight: 800;
   margin-bottom: 1rem;
@@ -897,7 +896,8 @@ a.sub-navigation-link:hover {
   }
 
   h2 {
-    font-size: 2.25rem;
+    font-size: 4.7rem;  
+    color: red; 
   }
 
   h3 {
