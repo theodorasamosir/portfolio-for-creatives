@@ -718,9 +718,6 @@ a:active {
   background-color: #000000;
 }
 
-.error-page-wrapper {
-}
-
 .error-page-inner-container {
   text-align: center;
 }
@@ -789,9 +786,6 @@ a:active {
   justify-content: space-evenly;
   padding: 1rem;
   text-align: center;
-}
-
-.sub-navigation-item {
 }
 
 a.sub-navigation-link {
@@ -873,7 +867,7 @@ a.sub-navigation-link:hover {
 
   h2 {
     font-size: 4.7rem;
-    color: red;
+    color: #ffffed;
   }
 
   h3 {
@@ -944,6 +938,13 @@ a.sub-navigation-link:hover {
 
   .footer-item-4 {
     grid-row: 2 / 3;
+    grid-column: 1 / 4;
+    text-align: center;
+    align-self: end;
+  }
+
+  .footer-item-5 {
+    grid-row: 4 / 5;
     grid-column: 1 / 4;
     text-align: center;
     align-self: end;
